@@ -5,5 +5,6 @@ exports.topic = {
 };
 
 exports.commands = [
-  require('./commands/configGet.js')
+  require('./commands/configGet.js'),
+  require('./commands/configSet.js')
 ];
