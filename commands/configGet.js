@@ -34,6 +34,9 @@ module.exports = {
       var writeFile = Promise.promisify(fs.writeFile);
       return writeFile(context.flags.file, config.configYaml, {
         encoding: 'utf8'
+      })
+      .then(function () {
+        console.log("GuvScale configuration saved to " + context.flags.file);
       });
     });
   })
