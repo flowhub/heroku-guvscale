@@ -26,9 +26,9 @@ module.exports = {
       return guvScale.getLatestConfig(appConfig.id, appConfig.token);
     })
     .then(function (config) {
-      if (!context.flags.file) {
+      if (!context.flags || !context.flags.file) {
         // No file provided, just write to STDOUT
-        console.log(config.configYaml);
+        cli.log(config.configYaml);
         return;
       }
       var writeFile = Promise.promisify(fs.writeFile);
@@ -36,7 +36,7 @@ module.exports = {
         encoding: 'utf8'
       })
       .then(function () {
-        console.log("GuvScale configuration saved to " + context.flags.file);
+        cli.log("GuvScale configuration saved to " + context.flags.file);
       });
     });
   })
