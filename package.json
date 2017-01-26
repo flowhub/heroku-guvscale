@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/flowhub/heroku-guvscale/issues"
   },
-  "homepage": "https://github.com/flowhub/heroku-guvscale#readme",
+  "homepage": "https://guvscale.com",
   "dependencies": {
     "bluebird": "^3.4.7",
     "heroku-cli-util": "^6.1.1",
