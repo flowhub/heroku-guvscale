@@ -3,3 +3,11 @@ dist: trusty
 sudo: false
 node_js:
 - '6'
+deploy:
+  provider: npm
+  email: henri.bergius@iki.fi
+  api_key:
+    secure: nWyD5Pgx59ycte1OIFhPRfJx/4WT1hPqFowrSniKqyqeFIlC12NzuV1+ANuoXxpT7J3gY+sTIVya66Dm8zUJDBExaFg7QV/yvQUxXfHllXBfkFDeZKYnFSQRM6LadeVOLhqsu5DEyVjhDqh3hp21nIP03q/KUzzgAzrYMADkbmj+nnq98C0x1h9HNljl3aGoxcEGBoel3OniT5auTGKpTvr6RH+Kyks9kHZcjx6Ro8IkHurKgyuz3BU0bjhiu3twIYkL4qTYPXNtedIsWD/h/liDFaBNBn2eUPbpL1mrjS0T7kXoODkp8S/n4PywAJg2BVyRbErU0SK+Rkan4Yu1lnYFk/UNip6K+kBypqfFI+T9ygyT18WT/GThovVMMl8DTYNP6s+jWgO5srmHph1TIfMIvrRLqFesO7CGiq3Q2Ng0DoS8mYI306icVQguh+l4k7M4aW0A1hab0S+hh655+tOy1WUIXU+rOf4yr9l4r9gn2Glg2xwFirEK+FFCVm33hBjZ8Qk/HrQuVwVlrqQFU/JZE6emIafxUxvmOOspKDu7Wp/fP6YQwO5OsQoOt36Z9gA8Ua2FKmaqn3QT/1OXJfpEnZb2hMaS+IuVF5Zzx8KwfwCp6eyGGJ0ZFp2HMDx2+xVQ1mjPvleGi2vCFXsnCuTgAKMblx/m6+/sJL5WN7c=
+  on:
+    tags: true
+    repo: flowhub/heroku-guvscale
