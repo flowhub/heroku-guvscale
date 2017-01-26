@@ -8,8 +8,8 @@ var fs = require('fs');
 module.exports = {
   topic: 'guvscale',
   command: 'getconfig',
-  description: 'gets latest guvscale config and saves it into a file',
-  help: 'heroku guvscale:getconfig filename.yml',
+  description: 'gets latest guvscale config and saves it into a YAML file',
+  help: 'heroku guvscale:getconfig --file filename.yml',
   needsAuth: true,
   needsApp: true,
   flags: [
