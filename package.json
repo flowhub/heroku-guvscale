@@ -21,7 +21,7 @@
   "homepage": "https://guvscale.com",
   "dependencies": {
     "bluebird": "^3.4.7",
-    "heroku-cli-util": "^6.1.1",
+    "heroku-cli-util": "^6.2.8",
     "request": "^2.79.0",
     "request-promise": "^4.1.1"
   },
